@@ -1,0 +1,24 @@
+form {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid goldenrod;
+  border-radius: 4px;
+  outline: none;
+  color: #6f976f;
+  font-size: 16px;
+}
+::placeholder {
+  color: yellowgreen;
+}
+
+div {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin: 2rem auto;
+  color: green;
+}
