@@ -1,14 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-// import { map } from 'rxjs/operators';
-// import { MonoTypeOperatorFunction } from 'rxjs';
 
-// export const ignorSymbols = (
-//   delimiter: string = ''
-// ): MonoTypeOperatorFunction<string> => {
-//   return (input$) =>
-//     input$.pipe(map((text) => text.replace(/[^\w\s]/gi, delimiter)));
-// };
 import { ignorSymbols } from './castomOperator/pipe.operator';
 
 @Component({
@@ -22,10 +14,12 @@ export class AppComponent {
   value!: string;
 
   constructor() {
-    this.specialInput.valueChanges.pipe(ignorSymbols(' ')).subscribe((text) => {
-      console.log(text);
-      this.value = text;
-    });
+    this.specialInput.valueChanges
+      .pipe(ignorSymbols('🤠'))
+      .subscribe((text) => {
+        console.log(text);
+        this.value = text;
+      });
   }
 
   onSubmit() {

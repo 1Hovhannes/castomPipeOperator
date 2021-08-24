@@ -92,7 +92,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://1hovhannes.github.io/castomPipeOperator/",
+            "baseHref": "https://1hovhannes.github.io/castomPipeOperator",
             "name": "castomPipeOperator",
             "email": "team@angular.schule"
           }
